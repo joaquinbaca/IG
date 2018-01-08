@@ -1,0 +1,32 @@
+IG Grupo C2 
+Autor: Joaquin Baca Medialdea
+Practica 4 
+Intrucciones de uso:
+F1:Cubo
+F2:Tetraedro
+F3:elección por terminal del modo tapas.
+F4:elección por terminal de un perfil por puntos.
+F5:elección por terminal de un ply.
+P:Modo puntos
+A:Modo lineas
+T:Modo Todo
+C:Modo chess
+S:Modo solido
+B:Modo barrido,solo darle despues de llamar al objeto con F(numero-el-que-sea)
++:aumenta los segmentos del barrido.
+-:disminuye los segmentos del barrido.
+//practica3///////
+w=objeto
+l=baja brazos
+k=suble brazos
++=aumenta velocidad de movimiento
+-=reduce velocidad de movimiento
+
+///practicas4////////////////////////////
+M=material 1
+n=material 2
+i=luz 1
+o= luz 2
++=mover luz
+-=mover luz
+t=textura
