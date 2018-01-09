@@ -16,6 +16,7 @@
 #include "luz.h"
 #include "material.h"
 #include "textura.h"
+#include "camara.h"
 
 
 class Escena {
@@ -49,6 +50,7 @@ double rotar;
 int es;
 double velocidad;
 Textura textura;
+Camara camara;
 
 // variables que definen la posicion de la camara en coordenadas polares
 GLfloat Observer_distance;

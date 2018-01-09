@@ -2,11 +2,21 @@
 #include <camara.h>
 
 
-Camara::Camara(int x, int y){
+Camara::Camara(){
+
+	Front_plane=50;
+    Back_plane=2000;
+    Width=200;
+    Height=200;
 
 }
 
-void Camara::activar(){
+void Camara::actualizar(GLfloat Widt, GLfloat Heigh, GLfloat Front_plan, GLfloat Back_plan){
+
+		Width = Widt;
+		Height = Heigh;
+		Front_plane = Front_plan;
+		Back_plane = Back_plan;
 
 }
 

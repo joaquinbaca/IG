@@ -167,8 +167,9 @@ switch (tecla)
     			glPopMatrix();
 			break;
 			case 14:
-                        textura.activar();
-                        break;
+                textura.activar();
+            break;
+
 		
 	}
 }
@@ -263,6 +264,10 @@ int Escena::teclaPulsada(unsigned char Tecla1,int x,int y) {
 		tecla=13;
 	if(toupper(Tecla1)=='T')
 		tecla=14;
+	if(toupper(Tecla1)=='1')
+		camara.setOrtho();
+	if(toupper(Tecla1)=='2')
+		camara.setPerspectiva();
 	if (toupper(Tecla1)=='Q') return 1;
 	else return 0;
 	
@@ -340,6 +345,7 @@ glFrustum(-Width,Width,-Height,Height,Front_plane*40,Back_plane/40);
 
 void Escena::redimensionar(int newWidth,int newHeight) {
 change_projection();
+camara.actualizar(Width,Height,Front_plane*40,Back_plane/40);
 Width=newWidth/10;
 Height=newHeight/10;
 glViewport(0,0,newWidth,newHeight);

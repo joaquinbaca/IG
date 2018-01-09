@@ -13,17 +13,17 @@ class Camara{
 
 	private:
 
-		int posX;
-		int posY;
-		int Width;
-		int Height;
-		int Front_plane;
-		int Back_plane;
+		GLfloat posX;
+		GLfloat posY;
+		GLfloat Width;
+		GLfloat Height;
+		GLfloat Front_plane;
+		GLfloat Back_plane;
 
 	public:
 
-		Camara(int x, int y);
-		void activar();
+		Camara();
+		void actualizar(GLfloat Width, GLfloat Height, GLfloat Front_plane, GLfloat Back_plane);
 		void desactivar();
 		void setOrtho();
 		void setPerspectiva();
